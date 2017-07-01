@@ -37,6 +37,8 @@ roms = {
 src_dir = '/boot/ROMS/'
 dest_dir = '/home/pi/RetroPie/roms/'
 
+print "Moving ROMS"
+
 for r in roms:
         src = src_dir + r
         dest = dest_dir + r
@@ -44,4 +46,6 @@ for r in roms:
         for file_name in src_files:
             full_file_name = os.path.join(src, file_name)
             if (os.path.isfile(full_file_name)):
-                shutil.copy(full_file_name, dest)
+                shutil.move(full_file_name, dest)
+
+print "Finished Moving ROMS"
