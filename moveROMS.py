@@ -11,7 +11,6 @@ roms = {
         'sg-1000',
         'arcade',
         'fds',
-        'genesis',
         'n64',
         'pcengine',
         'snes',
